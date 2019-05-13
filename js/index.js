@@ -84,3 +84,6 @@ h4[5].innerText = siteContent["contact"]['contact-h4']
 p[5].innerText = siteContent["contact"]["address"]
 p[6].innerText = siteContent["contact"]["phone"]
 p[7].innerText = siteContent["contact"]["email"]
+
+// Set footer section content
+p[8].innerText = siteContent["footer"]["copyright"]
