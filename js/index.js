@@ -38,11 +38,28 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let cta_image = document.getElementById("cta-img");
+// Set Image selectors
+const cta_image = document.getElementById("cta-img");
 cta_image.setAttribute('src', siteContent["cta"]["img-src"])
 
-let middle_image = document.getElementById("middle-img");
+const middle_image = document.getElementById("middle-img");
 middle_image.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// Set header navigation selectors
+const nav1 = document.getElementsByTagName("a")[0];
+nav1.innerText= siteContent["nav"]["nav-item-1"]
+
+const nav2 = document.getElementsByTagName("a")[1];
+nav2.innerText= siteContent["nav"]["nav-item-2"]
+
+const nav3 = document.getElementsByTagName("a")[2];
+nav3.innerText= siteContent["nav"]["nav-item-3"]
+
+const nav4 = document.getElementsByTagName("a")[3];
+nav4.innerText= siteContent["nav"]["nav-item-4"]
+
+const nav5 = document.getElementsByTagName("a")[4];
+nav5.innerText= siteContent["nav"]["nav-item-5"]
