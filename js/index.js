@@ -49,12 +49,29 @@ const middle_image = document.getElementById("middle-img");
 middle_image.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 // Set header navigation selectors
-const nav = document.getElementsByTagName("a");
-nav[0].innerText= siteContent["nav"]["nav-item-1"]
-nav[1].innerText= siteContent["nav"]["nav-item-2"]
-nav[2].innerText= siteContent["nav"]["nav-item-3"]
-nav[3].innerText= siteContent["nav"]["nav-item-4"]
-nav[4].innerText= siteContent["nav"]["nav-item-5"]
+const nava = document.getElementsByTagName("a");
+nava[0].innerText= siteContent["nav"]["nav-item-1"]
+console.log(nava[0]); //check who is here before prepend()
+nava[1].innerText= siteContent["nav"]["nav-item-2"]
+nava[2].innerText= siteContent["nav"]["nav-item-3"]
+nava[3].innerText= siteContent["nav"]["nav-item-4"]
+nava[4].innerText= siteContent["nav"]["nav-item-5"]
+nava[5].innerText= siteContent["nav"]["nav-item-6"]
+
+// Create additional  navigation elements to inherit from the same color
+// bring this block to run before the `for` rule changing the navigation color so they can inherit the styles
+const home = document.createElement('a');
+home.textContent = "Home";
+home.setAttribute('href', "#")
+
+const blog = document.createElement('a');
+blog.textContent = "Blog";
+blog.setAttribute('href', "#")
+
+const nav = document.querySelector('nav');
+nav.appendChild(blog);
+nav.prepend(home);
+console.log(nava[0]); //check who is here after prepend()
 
 // Set cta section contents
 const main_h1 = document.getElementsByTagName("h1")[0];
@@ -89,6 +106,6 @@ p[7].innerText = siteContent["contact"]["email"]
 p[8].innerText = siteContent["footer"]["copyright"]
 
 // Change navigation color
-for (let i = 0; i < nav.length; i++){
-  nav[i].setAttribute("style", "color: green;");
+for (let i = 0; i < nava.length; i++){
+  nava[i].setAttribute("style", "color: green;");
 }
