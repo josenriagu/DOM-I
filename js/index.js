@@ -49,20 +49,12 @@ const middle_image = document.getElementById("middle-img");
 middle_image.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 // Set header navigation selectors
-const nav1 = document.getElementsByTagName("a")[0];
-nav1.innerText= siteContent["nav"]["nav-item-1"]
-
-const nav2 = document.getElementsByTagName("a")[1];
-nav2.innerText= siteContent["nav"]["nav-item-2"]
-
-const nav3 = document.getElementsByTagName("a")[2];
-nav3.innerText= siteContent["nav"]["nav-item-3"]
-
-const nav4 = document.getElementsByTagName("a")[3];
-nav4.innerText= siteContent["nav"]["nav-item-4"]
-
-const nav5 = document.getElementsByTagName("a")[4];
-nav5.innerText= siteContent["nav"]["nav-item-5"]
+const nav = document.getElementsByTagName("a");
+nav[0].innerText= siteContent["nav"]["nav-item-1"]
+nav[1].innerText= siteContent["nav"]["nav-item-2"]
+nav[2].innerText= siteContent["nav"]["nav-item-3"]
+nav[3].innerText= siteContent["nav"]["nav-item-4"]
+nav[4].innerText= siteContent["nav"]["nav-item-5"]
 
 // Set cta section contents
 const main_h1 = document.getElementsByTagName("h1")[0];
@@ -86,3 +78,9 @@ p[1].innerText = siteContent["main-content"]["about-content"]
 p[2].innerText = siteContent["main-content"]["services-content"]
 p[3].innerText = siteContent["main-content"]["product-content"]
 p[4].innerText = siteContent["main-content"]["vision-content"]
+
+// Set contact section contents
+h4[5].innerText = siteContent["contact"]['contact-h4']
+p[5].innerText = siteContent["contact"]["address"]
+p[6].innerText = siteContent["contact"]["phone"]
+p[7].innerText = siteContent["contact"]["email"]
