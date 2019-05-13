@@ -63,3 +63,10 @@ nav4.innerText= siteContent["nav"]["nav-item-4"]
 
 const nav5 = document.getElementsByTagName("a")[4];
 nav5.innerText= siteContent["nav"]["nav-item-5"]
+
+// Set cta section contents
+let main_h1 = document.getElementsByTagName("h1")[0];
+main_h1.innerText = siteContent["cta"]["h1"]
+
+let cta_button = document.getElementsByTagName("button")[0];
+cta_button.innerText = siteContent["cta"]["button"]
