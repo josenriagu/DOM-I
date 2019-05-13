@@ -65,8 +65,24 @@ const nav5 = document.getElementsByTagName("a")[4];
 nav5.innerText= siteContent["nav"]["nav-item-5"]
 
 // Set cta section contents
-let main_h1 = document.getElementsByTagName("h1")[0];
+const main_h1 = document.getElementsByTagName("h1")[0];
 main_h1.innerText = siteContent["cta"]["h1"]
 
-let cta_button = document.getElementsByTagName("button")[0];
+const cta_button = document.getElementsByTagName("button")[0];
 cta_button.innerText = siteContent["cta"]["button"]
+
+// Set main section contents
+const h4 = document.getElementsByTagName ("h4");
+h4[0].innerText = siteContent["main-content"]["features-h4"]
+h4[1].innerText = siteContent["main-content"]["about-h4"]
+h4[2].innerText = siteContent["main-content"]["services-h4"]
+h4[3].innerText = siteContent["main-content"]["product-h4"]
+h4[4].innerText = siteContent["main-content"]["vision-h4"]
+
+
+const p = document.getElementsByTagName("p");
+p[0].innerText = siteContent["main-content"]["features-content"]
+p[1].innerText = siteContent["main-content"]["about-content"]
+p[2].innerText = siteContent["main-content"]["services-content"]
+p[3].innerText = siteContent["main-content"]["product-content"]
+p[4].innerText = siteContent["main-content"]["vision-content"]
