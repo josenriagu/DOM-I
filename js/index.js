@@ -87,3 +87,8 @@ p[7].innerText = siteContent["contact"]["email"]
 
 // Set footer section content
 p[8].innerText = siteContent["footer"]["copyright"]
+
+// Change navigation color
+for (let i = 0; i < nav.length; i++){
+  nav[i].setAttribute("style", "color: green;");
+}
